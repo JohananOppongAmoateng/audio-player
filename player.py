@@ -22,7 +22,7 @@ def load_music():
     screen.directory = filedialog.askdirectory()
 
     for song in os.listdir(screen.directory):
-        filename,ext = os.path.splitext(song)
+        _,ext = os.path.splitext(song)
 
         if ext == ".mp3":
             songs.append(song)
